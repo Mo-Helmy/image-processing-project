@@ -1,0 +1,48 @@
+{
+  "name": "image-processing-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "start": "nodemon src/index.ts",
+    "startjs": "nodemon dist/.",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --config .prettierrc {,!(node_modules)/**/}*.ts --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mo-Helmy/image-processing-project.git"
+  },
+  "author": "Mohamed Helmy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mo-Helmy/image-processing-project/issues"
+  },
+  "homepage": "https://github.com/Mo-Helmy/image-processing-project#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jasmine": "^4.4.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.31.1",
+    "supertest": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jasmine": "^4.3.0",
+    "@types/node": "^18.8.4",
+    "@types/sharp": "^0.31.0",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
